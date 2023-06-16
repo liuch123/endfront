@@ -228,7 +228,7 @@ export default {
         params.ids = row.id
         params.status = row.status ? '0' : '1'
       }
-      this.$confirm('确认更改该套餐状态?', '提示', {
+      this.$confirm('确认更改该套餐状态吗?', '提示', {
         'confirmButtonText': '确定',
         'cancelButtonText': '取消',
         'type': 'warning'

@@ -241,7 +241,7 @@ export default {
       })
     },
 
-    // 全部操作
+    // 全部操作..
     handleSelectionChange(val) {
       let checkArr = []
       val.forEach((n) => {

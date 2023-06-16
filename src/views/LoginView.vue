@@ -109,8 +109,8 @@ export default {
             // localStorage.setItem('userInfo', JSON.stringify(res.data))
             this.updateUserInfo(JSON.stringify(res.data))
             // this.$store.commit('setUserInfo',JSON.stringify(res.data))
-            // console.log("这是获取的userinfo:"+this.$store.state.employee.userInfo)
-            // console.log("这是获取的userinfo:"+this.userInfo)
+            // console.log("这是获取到的userinfo:"+this.$store.state.employee.userInfo)
+            // console.log("这是获取到的userinfo:"+this.userInfo)
 
             await this.$router.push('/dashboard')
           } else {
