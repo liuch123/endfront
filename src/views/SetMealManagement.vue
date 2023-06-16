@@ -228,7 +228,7 @@ export default {
         params.ids = row.id
         params.status = row.status ? '0' : '1'
       }
-      this.$confirm('确认更改该套餐状态吗?', '提示', {
+      this.$confirm('确认更改该套餐状态?', '提示', {
         'confirmButtonText': '确定',
         'cancelButtonText': '取消',
         'type': 'warning'
@@ -239,7 +239,7 @@ export default {
             this.$message.success('套餐状态已经更改成功！')
             this.handleQuery()
           } else {
-            this.$message.error(res.msg || '操作失败了')
+            this.$message.error(res.msg || '操作失败')
           }
         }).catch(err => {
           this.$message.error('请求出错了：' + err)

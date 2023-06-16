@@ -38,7 +38,7 @@
             </el-form-item>
             <el-form-item style="width: 100%">
               <!--
-                    prevent 是 Vue.js 指令中的一种修饰符，用于阻止浏览器默认事件发生。
+                    prevent 是 Vue.js 指令中的一种修饰符，用于阻止浏览器默认事件的发生。
               -->
               <el-button :loading="loading" class="login-btn" size="medium" type="primary" style="width: 100%"
                          @click.native.prevent="handleLogin">
@@ -109,8 +109,8 @@ export default {
             // localStorage.setItem('userInfo', JSON.stringify(res.data))
             this.updateUserInfo(JSON.stringify(res.data))
             // this.$store.commit('setUserInfo',JSON.stringify(res.data))
-            // console.log("这是获取到的userinfo:"+this.$store.state.employee.userInfo)
-            // console.log("这是获取到的userinfo:"+this.userInfo)
+            // console.log("这是获取的userinfo:"+this.$store.state.employee.userInfo)
+            // console.log("这是获取的userinfo:"+this.userInfo)
 
             await this.$router.push('/dashboard')
           } else {
