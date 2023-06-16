@@ -239,7 +239,7 @@ export default {
             this.$message.success('套餐状态已经更改成功！')
             this.handleQuery()
           } else {
-            this.$message.error(res.msg || '操作失败')
+            this.$message.error(res.msg || '操作失败了')
           }
         }).catch(err => {
           this.$message.error('请求出错了：' + err)

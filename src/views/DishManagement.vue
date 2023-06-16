@@ -222,7 +222,7 @@ export default {
         params.status = row.status ? '0' : '1'
       }
       this.dishState = params
-      this.$confirm('确认更改该菜品状态?', '提示', {
+      this.$confirm('已经确认更改该菜品状态?', '提示', {
         'confirmButtonText': '确定',
         'cancelButtonText': '取消',
         'type': 'warning'

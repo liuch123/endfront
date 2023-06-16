@@ -38,7 +38,7 @@
             </el-form-item>
             <el-form-item style="width: 100%">
               <!--
-                    prevent 是 Vue.js 指令中的一种修饰符，用于阻止浏览器默认事件的发生。
+                    prevent 是 Vue.js 指令中的一种修饰符，用于阻止浏览器默认事件发生。
               -->
               <el-button :loading="loading" class="login-btn" size="medium" type="primary" style="width: 100%"
                          @click.native.prevent="handleLogin">
