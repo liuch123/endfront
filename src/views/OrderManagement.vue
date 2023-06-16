@@ -293,7 +293,7 @@ export default {
 }
 
 .info-box .item-box .des {
-  flex: 1;
+  flex: 1
   color: #333333;
 }
 </style>
